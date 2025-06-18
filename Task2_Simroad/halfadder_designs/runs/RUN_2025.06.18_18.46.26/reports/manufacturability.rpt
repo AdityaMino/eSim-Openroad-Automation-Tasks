@@ -1,0 +1,19 @@
+Design Name: halfadder
+Run Directory: /openlane/designs/halfadder/runs/RUN_2025.06.18_18.46.26
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/halfadder/runs/RUN_2025.06.18_18.46.26/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/halfadder/runs/RUN_2025.06.18_18.46.26/logs/signoff/39-halfadder.lef.lvs.log
+Number of nets: 11                         |Number of nets: 11                         
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/halfadder/runs/RUN_2025.06.18_18.46.26/logs/signoff/42-arc.log
+Pin violations: 0
+Net violations: 0

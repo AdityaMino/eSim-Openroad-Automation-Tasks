@@ -1,0 +1,136 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO halfadder
+  CLASS BLOCK ;
+  FOREIGN halfadder ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 63.505 BY 74.225 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 14.575 10.640 16.175 62.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 27.685 10.640 29.285 62.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 40.795 10.640 42.395 62.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 53.905 10.640 55.505 62.800 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 19.840 58.200 21.440 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 32.760 58.200 34.360 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 45.680 58.200 47.280 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 58.600 58.200 60.200 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 11.275 10.640 12.875 62.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 24.385 10.640 25.985 62.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 37.495 10.640 39.095 62.800 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 50.605 10.640 52.205 62.800 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 16.540 58.200 18.140 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 29.460 58.200 31.060 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 42.380 58.200 43.980 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.280 55.300 58.200 56.900 ;
+    END
+  END VPWR
+  PIN in1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 34.040 4.000 34.640 ;
+    END
+  END in1
+  PIN in4
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.196500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 37.440 4.000 38.040 ;
+    END
+  END in4
+  PIN out2
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 59.505 37.440 63.505 38.040 ;
+    END
+  END out2
+  PIN out3
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 59.505 34.040 63.505 34.640 ;
+    END
+  END out3
+  OBS
+      LAYER nwell ;
+        RECT 5.330 10.795 58.150 62.750 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 57.960 62.645 ;
+      LAYER met1 ;
+        RECT 4.210 10.640 57.960 62.800 ;
+      LAYER met2 ;
+        RECT 4.230 10.695 56.490 62.745 ;
+      LAYER met3 ;
+        RECT 3.990 38.440 59.505 62.725 ;
+        RECT 4.400 37.040 59.105 38.440 ;
+        RECT 3.990 35.040 59.505 37.040 ;
+        RECT 4.400 33.640 59.105 35.040 ;
+        RECT 3.990 10.715 59.505 33.640 ;
+  END
+END halfadder
+END LIBRARY
+

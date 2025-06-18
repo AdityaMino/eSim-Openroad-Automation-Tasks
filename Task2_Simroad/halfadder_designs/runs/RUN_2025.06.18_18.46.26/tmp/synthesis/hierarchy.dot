@@ -1,0 +1,17 @@
+digraph "halfadder" {
+label="halfadder";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="out3", color="black", fontcolor="black" ];
+n2 [ shape=octagon, label="out2", color="black", fontcolor="black" ];
+n3 [ shape=octagon, label="in4", color="black", fontcolor="black" ];
+n4 [ shape=octagon, label="in1", color="black", fontcolor="black" ];
+c7 [ shape=record, label="{{<p4> in1|<p5> in2}|U3\ndand|{<p6> out}}",  ];
+c8 [ shape=record, label="{{<p4> in1|<p5> in2}|U2\ndxor|{<p6> out}}",  ];
+c8:p6:e -> n1:w [color="black", fontcolor="black", label=""];
+c7:p6:e -> n2:w [color="black", fontcolor="black", label=""];
+n3:e -> c7:p5:w [color="black", fontcolor="black", label=""];
+n3:e -> c8:p5:w [color="black", fontcolor="black", label=""];
+n4:e -> c7:p4:w [color="black", fontcolor="black", label=""];
+n4:e -> c8:p4:w [color="black", fontcolor="black", label=""];
+}

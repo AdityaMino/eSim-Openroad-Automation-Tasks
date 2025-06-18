@@ -1,0 +1,59 @@
+(DELAYFILE
+ (SDFVERSION "3.0")
+ (DESIGN "halfadder")
+ (DATE "Wed Jun 18 18:46:32 2025")
+ (VENDOR "Parallax")
+ (PROGRAM "STA")
+ (VERSION "2.5.0")
+ (DIVIDER .)
+ (VOLTAGE 1.800::1.800)
+ (PROCESS "1.000::1.000")
+ (TEMPERATURE 25.000::25.000)
+ (TIMESCALE 1ns)
+ (CELL
+  (CELLTYPE "halfadder")
+  (INSTANCE)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT in1 _1_.B (0.034:0.034:0.034) (0.015:0.015:0.015))
+    (INTERCONNECT in1 _2_.B (0.034:0.034:0.034) (0.015:0.015:0.015))
+    (INTERCONNECT in4 _1_.A (0.037:0.037:0.037) (0.016:0.016:0.016))
+    (INTERCONNECT in4 _2_.A (0.037:0.037:0.037) (0.016:0.016:0.016))
+    (INTERCONNECT _1_.X out3 (0.000:0.000:0.000))
+    (INTERCONNECT _2_.X _3_.A (0.000:0.000:0.000))
+    (INTERCONNECT _3_.X out2 (0.000:0.000:0.000))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sky130_fd_sc_hd__xor2_2")
+  (INSTANCE _1_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.372:0.372:0.372) (0.151:0.151:0.151))
+    (IOPATH A X (0.353:0.353:0.353) (0.227:0.227:0.227))
+    (IOPATH B X (0.344:0.344:0.344) (0.143:0.143:0.143))
+    (IOPATH B X (0.361:0.361:0.361) (0.199:0.199:0.199))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sky130_fd_sc_hd__and2_2")
+  (INSTANCE _2_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.124:0.124:0.124) (0.150:0.150:0.150))
+    (IOPATH B X (0.127:0.127:0.127) (0.169:0.169:0.169))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "sky130_fd_sc_hd__buf_1")
+  (INSTANCE _3_)
+  (DELAY
+   (ABSOLUTE
+    (IOPATH A X (0.319:0.319:0.319) (0.213:0.214:0.214))
+   )
+  )
+ )
+)
