@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Ubuntu-Linux-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu Badge"/>
   </a>
   <a href="https://www.python.org/">
-    <img src="https://img.shields.io/badge/Python-3.18-F7DF1E?style=for-the-badge&logo=python&logoColor=blue" alt="Python Badge"/>
+    <img src="https://img.shields.io/badge/Python-3.8.10-F7DF1E?style=for-the-badge&logo=python&logoColor=blue" alt="Python Badge"/>
   </a>
 </p>
 
@@ -659,7 +659,7 @@ esim-to-openroad-automation/
 │   ├── sp2vlog.py
 │   ├── halfadder.cir
 │   ├── halfadder.v
-├── Task3_Simroad/
+├── Task2_Simroad/
 │   ├── Simroad.py
 │   ├── halfadder/
 │   │   ├── halfadder.sch
@@ -708,3 +708,4 @@ This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for f
 - **The Klayout Community** – for providing an excellent GDSII viewer
 - All open-source contributors and communities who made these tools possible
 - [efabless openlane team](https://github.com/efabless/openlane)
+- Mr. Nickson Jose - Openlane Set-up
