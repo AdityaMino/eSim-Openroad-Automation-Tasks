@@ -48,7 +48,7 @@ These tasks demonstrate the bridge between circuit design, behavioral descriptio
 - [📢 Instructions](#-instructions)
 - [🛠️ Methodology](#️-methodology)
 - [🧩 Errors Encountered & Solutions](#-errors-encountered--solutions)
-- [🔧 Steps to Run `sp2vlog.py` (SPICE to Verilog Converter)](steps-to-run-`sp2vlog.py`-(spice-to-verilog-converter))
+- [🔧 Steps to Run `sp2vlog.py` (SPICE to Verilog Converter)](#-steps-to-run-sp2vlogpy-spice-to-verilog-converter)
 - [📁 Files Included](#-files-included)
 
 ### 🔧 Task 2: eSim to OpenROAD Full Flow Automation
@@ -56,8 +56,8 @@ These tasks demonstrate the bridge between circuit design, behavioral descriptio
 - [📢 Instructions](#-instructions-1)
 - [🛠️ Methodology](#️-methodology-1)
 - [🧩 Errors Encountered & Solutions](#-errors-encountered--solutions-1)
-- [⚙️ Detailed Functionality of `Simroad.py` – The Automation Script](detailed-functionality-of-`simroad.py`--the-automation-script)
-- [🚀 Steps to Run `Simroad.py`](steps-to-run-`simroad.py`)
+- [⚙️ Detailed Functionality of `Simroad.py` – The Automation Script](#-detailed-functionality-of-simroadpy--the-automation-script)
+- [🚀 Steps to Run `Simroad.py`](#-steps-to-run-simroadpy)
 - [📁 Files Included](#-files-included-1)
 
 - [🗂 Folder Structure](#-folder-structure)
@@ -103,7 +103,7 @@ All the scripting is done using Python, and tools used are fully open-source, ma
 
 OpenROAD is an open-source project that provides a fully automated digital VLSI back-end toolchain—starting from RTL synthesis to GDSII layout generation. It focuses on developing the actual EDA tools like OpenDB, TritonRoute, FastRoute, OpenSTA, etc., that perform tasks such as floorplanning, placement, clock tree synthesis, routing, and timing analysis. OpenROAD™ is a front-runner in open-source semiconductor design automation tools and know-how. This project reduces barriers of access and tool costs to democratize system and product innovation in silicon. The OpenROAD tool and flow provide autonomous, no-human-in-the-loop, 24-hour RTL-GDSII capability to support low-overhead design exploration and implementation through tapeout. We welcome a diverse community of designers, researchers, enthusiasts and entrepreneurs who use and contribute to OpenROAD to make a far-reaching impact.
 
-[!image](https://user-images.githubusercontent.com/86701156/124007394-f62a0d80-d9f8-11eb-9d46-7cc885c0eff6.PNG)
+![image](https://user-images.githubusercontent.com/86701156/124007394-f62a0d80-d9f8-11eb-9d46-7cc885c0eff6.PNG)
 
 *The Openlane Full ASIC flow*
 
