@@ -40,14 +40,14 @@ These tasks demonstrate the bridge between circuit design, behavioral descriptio
 - [📘 Introduction](#-introduction)
 - [📐 About eSim](#-about-esim)
 - [🧱 About OpenROAD](#-about-openroad)
-- [🛠️ eSim Installation Instructions (v2.3)](#-esim-installation-instructions-v23)
+- [🛠️ eSim Installation Instructions (v2.3)](#️-esim-installation-instructions-v23)
 - [🔑 Openlane Installation Instructions](#-openlane-installation-instructions)
 
 ### 🔧 Task 1: SPICE to Verilog Converter
 - [🎯 Objective](#-objective)
 - [📢 Instructions](#-instructions)
 - [🛠️ Methodology](#️-methodology)
-- [📷️ Simulation Images](#simulation-images)
+- [📷️ Simulation Images](#️-simulation-images)
 - [🧩 Errors Encountered & Solutions](#-errors-encountered--solutions)
 - [🔧 Steps to Run `sp2vlog.py` (SPICE to Verilog Converter)](#-steps-to-run-sp2vlogpy-spice-to-verilog-converter)
 - [📁 Files Included](#-files-included)
@@ -56,9 +56,9 @@ These tasks demonstrate the bridge between circuit design, behavioral descriptio
 - [🎯 Objective](#-objective-1)
 - [📢 Instructions](#-instructions-1)
 - [🛠️ Methodology](#️-methodology-1)
-- [📷️ Simulation Images](#simulation-images-1)
+- [📷️ Simulation Images](#️-simulation-images-1)
 - [🧩 Errors Encountered & Solutions](#-errors-encountered--solutions-1)
-- [⚙️ Detailed Functionality of `Simroad.py` – The Automation Script](#-detailed-functionality-of-simroadpy--the-automation-script)
+- [⚙️ Detailed Functionality of `Simroad.py` – The Automation Script](#️-detailed-functionality-of-simroadpy--the-automation-script)
 - [🚀 Steps to Run `Simroad.py`](#-steps-to-run-simroadpy)
 - [📁 Files Included](#-files-included-1)
 
@@ -433,6 +433,9 @@ Design a circuit in eSim, simulate it, and use OpenROAD to generate a physical l
 
 We follow the same steps to generate a clean Verilog code from the spice netlist of a halfadder designed in eSim. We then use that verilog code to perform RTL2GDSII flow using Openlane.
 
+#### [📹 Watch Simulation Demo (Google Drive)](https://drive.google.com/file/d/1DGg8D9Rwv_pCN86jr18uvIfLAkEg2ujG/view)
+
+
 ![Screenshot from 2025-06-19 00-09-23](https://github.com/user-attachments/assets/6b7254bb-8eb6-4121-a9b4-eea5970b4106)
 
 *Launching `Simroad.py` in the Linux terminal. Prompt `Simroad.py` with the location of Verilog files and the Openlane tools*
@@ -497,7 +500,8 @@ We follow the same steps to generate a clean Verilog code from the spice netlist
 | **Output clutter** | The console output from subprocess calls and other logs were verbose and unformatted, making it hard for users to follow what was happening. | Enhanced UX by adding emojis, green/red color-coded info/error messages, and spacing to maintain clarity throughout the terminal output. |
 | **No modular structure in exported Verilog** | The Verilog generated (manually or by script) from SPICE often lacked modular boundaries or clean port definitions, making it incompatible with synthesis tools. | Manually refactored the Verilog file by ensuring each design had proper `module`, `endmodule`, and explicit `input`/`output` declarations. The conversion script was updated to assist in auto-wrapping logic as needed. |
 
-###  
+### ⚙️ Detailed Functionality of `Simroad.py` – The Automation Script
+
 
 `Simroad.py` automates the flow from a Verilog file (exported from eSim) to a physical layout using OpenROAD through the OpenLane wrapper. I have listed below all the precise steps it performs:
 
